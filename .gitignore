@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments & IDEs
+.env
+.venv
+env/
+venv/
+ENV/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS & Temporary files
+Thumbs.db
+ej-debug.log
+*.tmp
+*.log
+
+# Raw weather forecasts, slides & scratch files
+*.grib2
+*.tar.gz
+*.torrent
+*.pptx
+Screenshot*.png
+output_hh.tif
+roads.geojson
+scratch/
+
+# Temporary generated audit logs in data/processed/
+data/processed/behavioral_validation_results.json
+data/processed/final_audit_execution_results.json
+data/processed/full_audit_suite_results.json
+data/processed/new_rainfall_demo_results.json
+data/processed/stage5_1_corrected_audit.json
+data/processed/stage5_1_final_forensic_verification.json
+data/processed/stage5_forensic_audit.json
+
+# Large model binary (regenerated via `python -m ml.train`)
+data/processed/model.pkl

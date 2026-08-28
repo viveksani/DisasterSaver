@@ -1,0 +1,85 @@
+{
+  "model_architecture": "RandomForestClassifier",
+  "random_state": 42,
+  "n_estimators": 100,
+  "max_depth": 12,
+  "class_weight": "balanced",
+  "dataset": {
+    "total_spatial_cells": 1367296,
+    "train_cells": 1025472,
+    "validation_cells": 341824,
+    "feature_names": [
+      "elevation",
+      "slope",
+      "tpi",
+      "dist_to_drain",
+      "q_cap",
+      "q_demand",
+      "r_overload"
+    ],
+    "class_distribution": {
+      "flooded_class_1": 411207,
+      "dry_class_0": 956089,
+      "flooded_percentage": 30.07
+    }
+  },
+  "validation_strategy": "Geographic Holdout Split (75% North/Middle vs 25% South)",
+  "raw_model_metrics": {
+    "precision": 0.2886,
+    "recall": 0.3011,
+    "f1_score": 0.2947,
+    "roc_auc": 0.707,
+    "pr_auc": 0.3118,
+    "iou": 0.1728,
+    "confusion_matrix": {
+      "TN": 208461,
+      "FP": 56813,
+      "FN": 53502,
+      "TP": 23048
+    },
+    "support": {
+      "flooded_class_1": 76550,
+      "dry_class_0": 265274
+    }
+  },
+  "physics_adjusted_metrics": {
+    "precision": 0.3009,
+    "recall": 0.3515,
+    "f1_score": 0.3242,
+    "roc_auc": 0.7057,
+    "pr_auc": 0.3128,
+    "iou": 0.1935,
+    "confusion_matrix": {
+      "TN": 202753,
+      "FP": 62521,
+      "FN": 49644,
+      "TP": 26906
+    },
+    "support": {
+      "flooded_class_1": 76550,
+      "dry_class_0": 265274
+    }
+  },
+  "feature_importances": {
+    "elevation": 0.2435,
+    "slope": 0.1601,
+    "tpi": 0.0491,
+    "dist_to_drain": 0.3647,
+    "q_cap": 0.0974,
+    "q_demand": 0.0044,
+    "r_overload": 0.0808
+  },
+  "physics_monotonicity_tests": {
+    "monotonic_increasing": true,
+    "no_boost_below_one": true,
+    "bounded_boost_above_one": true,
+    "clipped_in_zero_one_range": true,
+    "no_nan_or_inf": true
+  },
+  "reload_test_passed": true,
+  "notes": [
+    "Geographic holdout split reduces spatial autocorrelation bias between train and val.",
+    "Physics monotonicity adjustment is a heuristic post-processing rule applied to probabilities.",
+    "Target leakage prevented: verified target y is isolated and not present in input matrix X."
+  ]
+}
