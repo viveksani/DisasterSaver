@@ -29,7 +29,6 @@ ej-debug.log
 *.pptx
 Screenshot*.png
 output_hh.tif
-roads.geojson
 scratch/
 
 # Temporary generated audit logs in data/processed/
@@ -40,6 +39,3 @@ data/processed/new_rainfall_demo_results.json
 data/processed/stage5_1_corrected_audit.json
 data/processed/stage5_1_final_forensic_verification.json
 data/processed/stage5_forensic_audit.json
-
-# Large model binary (regenerated via `python -m ml.train`)
-data/processed/model.pkl
