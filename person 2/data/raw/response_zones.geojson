@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "name": "response_zones",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "response_zone_id": "Z000001",
+        "priority_level": "CRITICAL",
+        "critical_places_count": 2,
+        "recommended_team_count": 3,
+        "nearest_base_id": "B000001",
+        "zone_risk_score": 0.84
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.215,
+              13.055
+            ],
+            [
+              80.255,
+              13.055
+            ],
+            [
+              80.255,
+              13.095
+            ],
+            [
+              80.215,
+              13.095
+            ],
+            [
+              80.215,
+              13.055
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

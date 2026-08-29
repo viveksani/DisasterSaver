@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "hazard_aware_roads",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "road_id": "R000001", "highway_type": "primary", "road_length_m": 520.0, "flooded_length_m": 3042.7503432984968, "flood_exposure_ratio": 0.62498905736476429, "flood_risk_score": 0.87, "risk_class": "HIGH", "flood_zone_id": "F000001", "flooded": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 80.2, 13.05 ], [ 80.22, 13.06 ], [ 80.24, 13.07 ] ] } },
+{ "type": "Feature", "properties": { "road_id": "R000002", "highway_type": "secondary", "road_length_m": 410.0, "flooded_length_m": 3680.391131881373, "flood_exposure_ratio": 0.75149958420115337, "flood_risk_score": 0.87, "risk_class": "HIGH", "flood_zone_id": "F000001", "flooded": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 80.22, 13.06 ], [ 80.23, 13.08 ], [ 80.25, 13.09 ] ] } },
+{ "type": "Feature", "properties": { "road_id": "R000003", "highway_type": "tertiary", "road_length_m": 350.0, "flooded_length_m": 0.0, "flood_exposure_ratio": 0.0, "flood_risk_score": 0.0, "risk_class": "SAFE", "flood_zone_id": "NONE", "flooded": 0 }, "geometry": { "type": "LineString", "coordinates": [ [ 80.25, 13.09 ], [ 80.26, 13.11 ], [ 80.28, 13.12 ] ] } }
+]
+}

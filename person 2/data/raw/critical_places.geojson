@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "name": "critical_places",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "P000001",
+        "name": "Mock General Hospital",
+        "type": "hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.235,
+          13.075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "P000002",
+        "name": "Mock Relief Shelter",
+        "type": "shelter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.245,
+          13.085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "P000003",
+        "name": "Mock Fire Station",
+        "type": "fire_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.265,
+          13.105
+        ]
+      }
+    }
+  ]
+}

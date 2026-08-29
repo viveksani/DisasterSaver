@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d8" for="edge" attr.name="risk_class" attr.type="string" />
+  <key id="d7" for="edge" attr.name="flood_risk_score" attr.type="double" />
+  <key id="d6" for="edge" attr.name="flooded" attr.type="long" />
+  <key id="d5" for="edge" attr.name="routing_cost" attr.type="double" />
+  <key id="d4" for="edge" attr.name="length_m" attr.type="double" />
+  <key id="d3" for="edge" attr.name="highway_type" attr.type="string" />
+  <key id="d2" for="edge" attr.name="road_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="y" attr.type="double" />
+  <key id="d0" for="node" attr.name="x" attr.type="double" />
+  <graph edgedefault="undirected">
+    <node id="413261.762,1442801.784">
+      <data key="d0">413261.7622225973</data>
+      <data key="d1">1442801.7843460927</data>
+    </node>
+    <node id="415433.742,1443900.992">
+      <data key="d0">415433.74200877006</data>
+      <data key="d1">1443900.9919889604</data>
+    </node>
+    <node id="417605.541,1445000.362">
+      <data key="d0">417605.5405062981</data>
+      <data key="d1">1445000.3620764508</data>
+    </node>
+    <node id="416524.707,1446109.595">
+      <data key="d0">416524.706886086</data>
+      <data key="d1">1446109.594866266</data>
+    </node>
+    <node id="418696.287,1447209.041">
+      <data key="d0">418696.2874305555</data>
+      <data key="d1">1447209.0406307168</data>
+    </node>
+    <node id="419786.867,1449417.756">
+      <data key="d0">419786.86704731476</data>
+      <data key="d1">1449417.7562835042</data>
+    </node>
+    <node id="421958.048,1450517.442">
+      <data key="d0">421958.0477252229</data>
+      <data key="d1">1450517.4415508572</data>
+    </node>
+    <edge source="413261.762,1442801.784" target="415433.742,1443900.992">
+      <data key="d2">R000001</data>
+      <data key="d3">primary</data>
+      <data key="d4">2434.2870894127805</data>
+      <data key="d5">1.0920061694300272</data>
+      <data key="d6">1</data>
+      <data key="d7">0.87</data>
+      <data key="d8">HIGH</data>
+    </edge>
+    <edge source="415433.742,1443900.992" target="417605.541,1445000.362">
+      <data key="d2">R000001</data>
+      <data key="d3">primary</data>
+      <data key="d4">2434.1986983674155</data>
+      <data key="d5">1.0919665177524247</data>
+      <data key="d6">1</data>
+      <data key="d7">0.87</data>
+      <data key="d8">HIGH</data>
+    </edge>
+    <edge source="415433.742,1443900.992" target="416524.707,1446109.595">
+      <data key="d2">R000002</data>
+      <data key="d3">secondary</data>
+      <data key="d4">2463.3576746342474</data>
+      <data key="d5">1.2392191743040695</data>
+      <data key="d6">1</data>
+      <data key="d7">0.87</data>
+      <data key="d8">HIGH</data>
+    </edge>
+    <edge source="416524.707,1446109.595" target="418696.287,1447209.041">
+      <data key="d2">R000002</data>
+      <data key="d3">secondary</data>
+      <data key="d4">2434.038424118943</data>
+      <data key="d5">1.2244698028307677</data>
+      <data key="d6">1</data>
+      <data key="d7">0.87</data>
+      <data key="d8">HIGH</data>
+    </edge>
+    <edge source="418696.287,1447209.041" target="419786.867,1449417.756">
+      <data key="d2">R000003</data>
+      <data key="d3">tertiary</data>
+      <data key="d4">2463.288195757588</data>
+      <data key="d5">0.30180709637494724</data>
+      <data key="d6">0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">SAFE</data>
+    </edge>
+    <edge source="419786.867,1449417.756" target="421958.048,1450517.442">
+      <data key="d2">R000003</data>
+      <data key="d3">tertiary</data>
+      <data key="d4">2433.7898889088065</data>
+      <data key="d5">0.2981929036250527</data>
+      <data key="d6">0</data>
+      <data key="d7">0.0</data>
+      <data key="d8">SAFE</data>
+    </edge>
+  </graph>
+</graphml>

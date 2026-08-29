@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "routes",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "route_id": "RT000001", "from_id": "B000001", "to_id": "P000001", "distance_km": 4.9, "route_risk_score": 0.87, "estimated_time_min": 8.8, "flooded_edges_count": 2 }, "geometry": { "type": "LineString", "coordinates": [ [ 80.2, 13.05 ], [ 80.22, 13.06 ], [ 80.23, 13.08 ] ] } },
+{ "type": "Feature", "properties": { "route_id": "RT000002", "from_id": "B000001", "to_id": "P000002", "distance_km": 7.33, "route_risk_score": 0.87, "estimated_time_min": 13.7, "flooded_edges_count": 3 }, "geometry": { "type": "LineString", "coordinates": [ [ 80.2, 13.05 ], [ 80.22, 13.06 ], [ 80.23, 13.08 ], [ 80.25, 13.09 ] ] } }
+]
+}

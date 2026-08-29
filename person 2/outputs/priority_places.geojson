@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "priority_places",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "place_id": "P000001", "name": "Mock General Hospital", "type": "hospital", "flood_exposure": 0.87, "criticality": 1.0, "priority_score": 100.0, "priority_class": "CRITICAL" }, "geometry": { "type": "Point", "coordinates": [ 80.235, 13.075 ] } },
+{ "type": "Feature", "properties": { "place_id": "P000002", "name": "Mock Relief Shelter", "type": "shelter", "flood_exposure": 0.87, "criticality": 0.85, "priority_score": 43.054785657038565, "priority_class": "MEDIUM" }, "geometry": { "type": "Point", "coordinates": [ 80.245, 13.085 ] } },
+{ "type": "Feature", "properties": { "place_id": "P000003", "name": "Mock Fire Station", "type": "fire_station", "flood_exposure": 0.0, "criticality": 0.9, "priority_score": 18.981738114320493, "priority_class": "LOW" }, "geometry": { "type": "Point", "coordinates": [ 80.265, 13.105 ] } }
+]
+}

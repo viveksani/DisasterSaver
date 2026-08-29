@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "name": "affected_roads",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R000001",
+        "flood_overlap_pct": 72.4,
+        "flood_risk_score": 0.81,
+        "priority_score": 0.76,
+        "highway_type": "primary",
+        "road_length_m": 520.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2,
+            13.05
+          ],
+          [
+            80.22,
+            13.06
+          ],
+          [
+            80.24,
+            13.07
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "R000002",
+        "flood_overlap_pct": 45.0,
+        "flood_risk_score": 0.63,
+        "priority_score": 0.68,
+        "highway_type": "secondary",
+        "road_length_m": 410.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.22,
+            13.06
+          ],
+          [
+            80.23,
+            13.08
+          ],
+          [
+            80.25,
+            13.09
+          ]
+        ]
+      }
+    }
+  ]
+}

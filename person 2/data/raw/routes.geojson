@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "name": "routes",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "RT000001",
+        "from_id": "B000001",
+        "to_id": "P000001",
+        "distance_km": 4.72,
+        "route_risk_score": 0.18,
+        "estimated_time_min": 11.5,
+        "flooded_edges_count": 1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.205,
+            13.05
+          ],
+          [
+            80.215,
+            13.055
+          ],
+          [
+            80.225,
+            13.065
+          ],
+          [
+            80.235,
+            13.075
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "route_id": "RT000002",
+        "from_id": "B000001",
+        "to_id": "P000002",
+        "distance_km": 5.1,
+        "route_risk_score": 0.24,
+        "estimated_time_min": 13.0,
+        "flooded_edges_count": 1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.205,
+            13.05
+          ],
+          [
+            80.22,
+            13.06
+          ],
+          [
+            80.235,
+            13.075
+          ],
+          [
+            80.245,
+            13.085
+          ]
+        ]
+      }
+    }
+  ]
+}
