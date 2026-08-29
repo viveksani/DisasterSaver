@@ -1,0 +1,11 @@
+entity_type,id_column,entity_id,status
+road,road_id,R000001,LOCKED
+road,road_id,R000002,LOCKED
+road,road_id,R000003,LOCKED
+place,place_id,P000001,LOCKED
+place,place_id,P000002,LOCKED
+place,place_id,P000003,LOCKED
+base,base_id,B000001,LOCKED
+base,base_id,B000002,LOCKED
+flood_zone,zone_id,F000001,LOCKED
+flood_zone,zone_id,F000002,LOCKED

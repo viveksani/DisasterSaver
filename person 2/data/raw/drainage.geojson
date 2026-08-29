@@ -1,0 +1,82 @@
+{
+  "type": "FeatureCollection",
+  "name": "drainage",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "drain_id": "D000001",
+        "width_m": 2.0,
+        "depth_m": 1.5,
+        "slope_pct": 0.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.19,
+            13.04
+          ],
+          [
+            80.22,
+            13.06
+          ],
+          [
+            80.24,
+            13.08
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "drain_id": "D000002",
+        "width_m": 1.2,
+        "depth_m": 1.0,
+        "slope_pct": 0.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.22,
+            13.06
+          ],
+          [
+            80.25,
+            13.09
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "drain_id": "D000003",
+        "width_m": 1.5,
+        "depth_m": 1.2,
+        "slope_pct": 0.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.25,
+            13.09
+          ],
+          [
+            80.28,
+            13.12
+          ]
+        ]
+      }
+    }
+  ]
+}

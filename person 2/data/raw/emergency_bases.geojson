@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "name": "emergency_bases",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "base_id": "B000001",
+        "name": "Mock Emergency Base",
+        "team_count": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.205,
+          13.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "base_id": "B000002",
+        "name": "Mock Secondary Base",
+        "team_count": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.275,
+          13.115
+        ]
+      }
+    }
+  ]
+}

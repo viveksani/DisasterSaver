@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "name": "predicted_flood",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "F000001",
+        "risk_score": 0.87,
+        "risk_class": "HIGH",
+        "rainfall_mm_hr": 80.0,
+        "runoff_m3_s": 120.0,
+        "drainage_capacity_m3_s": 90.0,
+        "overload_ratio": 1.33
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.215,
+              13.055
+            ],
+            [
+              80.245,
+              13.055
+            ],
+            [
+              80.245,
+              13.085
+            ],
+            [
+              80.215,
+              13.085
+            ],
+            [
+              80.215,
+              13.055
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": "F000002",
+        "risk_score": 0.58,
+        "risk_class": "MEDIUM",
+        "rainfall_mm_hr": 80.0,
+        "runoff_m3_s": 75.0,
+        "drainage_capacity_m3_s": 82.0,
+        "overload_ratio": 0.91
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.255,
+              13.075
+            ],
+            [
+              80.28,
+              13.075
+            ],
+            [
+              80.28,
+              13.1
+            ],
+            [
+              80.255,
+              13.1
+            ],
+            [
+              80.255,
+              13.075
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
