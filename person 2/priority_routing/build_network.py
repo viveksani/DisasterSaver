@@ -20,9 +20,12 @@ print("=" * 65)
 # FILE PATHS
 # ============================================================
 
-INPUT_FILE = r"C:\DisasterSaver\outputs\routing_roads.geojson"
+from pathlib import Path
 
-OUTPUT_FILE = r"C:\DisasterSaver\outputs\road_network.graphml"
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+INPUT_FILE = BASE_DIR / "outputs" / "routing_roads.geojson"
+OUTPUT_FILE = BASE_DIR / "outputs" / "road_network.graphml"
 
 
 # ============================================================

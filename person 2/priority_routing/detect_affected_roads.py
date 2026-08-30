@@ -8,11 +8,17 @@ import pandas as pd
 # Level 4.4: Calculate Flood Overlap
 # ==========================================
 
-ROADS_FILE = r"C:\\DisasterSaver\\data\\raw\\roads.geojson"
-FLOOD_FILE = r"C:\\DisasterSaver\\data\\raw\\predicted_flood.geojson"
+from pathlib import Path
 
-OUTPUT_DIR = r"C:\DisasterSaver\data\processed"
-OUTPUT_FILE = os.path.join(OUTPUT_DIR, "affected_roads.geojson")
+BASE_DIR = Path(__file__).resolve().parent.parent
+RAW_DIR = BASE_DIR / "data" / "raw"
+PROCESSED_DIR = BASE_DIR / "data" / "processed"
+
+ROADS_FILE = RAW_DIR / "roads.geojson"
+FLOOD_FILE = RAW_DIR / "predicted_flood.geojson"
+
+OUTPUT_DIR = PROCESSED_DIR
+OUTPUT_FILE = OUTPUT_DIR / "affected_roads.geojson"
 
 print("========================================")
 print("DisasterSaver - Affected Road Detection")

@@ -13,9 +13,12 @@ print("Hazard-Aware Routing Cost")
 print("=" * 60)
 
 
-INPUT_FILE = r"C:\DisasterSaver\outputs\hazard_aware_roads.geojson"
+from pathlib import Path
 
-OUTPUT_FILE = r"C:\DisasterSaver\outputs\routing_roads.geojson"
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+INPUT_FILE = BASE_DIR / "outputs" / "hazard_aware_roads.geojson"
+OUTPUT_FILE = BASE_DIR / "outputs" / "routing_roads.geojson"
 
 
 # ============================================================

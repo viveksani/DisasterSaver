@@ -13,11 +13,13 @@ print("Hazard-Aware Road Preparation")
 print("=" * 65)
 
 
-ROADS_FILE = r"C:\DisasterSaver\data\raw\roads.geojson"
+from pathlib import Path
 
-FLOOD_FILE = r"C:\DisasterSaver\data\raw\predicted_flood.geojson"
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-OUTPUT_FILE = r"C:\DisasterSaver\outputs\hazard_aware_roads.geojson"
+ROADS_FILE = BASE_DIR / "data" / "raw" / "roads.geojson"
+FLOOD_FILE = BASE_DIR / "data" / "raw" / "predicted_flood.geojson"
+OUTPUT_FILE = BASE_DIR / "outputs" / "hazard_aware_roads.geojson"
 
 
 # ============================================================

@@ -18,17 +18,13 @@ print("Exporting Final Routes")
 print("=" * 65)
 
 
-CALCULATED_ROUTES_FILE = (
-    r"C:\DisasterSaver\outputs\calculated_routes.json"
-)
+from pathlib import Path
 
-GRAPH_FILE = (
-    r"C:\DisasterSaver\outputs\road_network.graphml"
-)
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-OUTPUT_FILE = (
-    r"C:\DisasterSaver\outputs\routes.geojson"
-)
+CALCULATED_ROUTES_FILE = BASE_DIR / "outputs" / "calculated_routes.json"
+GRAPH_FILE = BASE_DIR / "outputs" / "road_network.graphml"
+OUTPUT_FILE = BASE_DIR / "outputs" / "routes.geojson"
 
 
 # ============================================================

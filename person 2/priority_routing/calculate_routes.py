@@ -15,21 +15,17 @@ print("Hazard-Aware Route Calculation")
 print("=" * 60)
 
 
-GRAPH_FILE = (
-    r"C:\DisasterSaver\outputs\road_network.graphml"
-)
+from pathlib import Path
 
-BASES_FILE = (
-    r"C:\DisasterSaver\data\raw\emergency_bases.geojson"
-)
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-PLACES_FILE = (
-    r"C:\DisasterSaver\outputs\priority_places.geojson"
-)
+GRAPH_FILE = BASE_DIR / "outputs" / "road_network.graphml"
 
-OUTPUT_FILE = (
-    r"C:\DisasterSaver\outputs\calculated_routes.json"
-)
+BASES_FILE = BASE_DIR / "data" / "raw" / "emergency_bases.geojson"
+
+PLACES_FILE = BASE_DIR / "outputs" / "priority_places.geojson"
+
+OUTPUT_FILE = BASE_DIR / "outputs" / "calculated_routes.json"
 
 
 # ============================================================

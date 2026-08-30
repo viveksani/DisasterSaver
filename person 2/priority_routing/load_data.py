@@ -5,10 +5,14 @@ import geopandas as gpd
 # File paths
 # ==========================================
 
-ROADS_FILE = "C:\\DisasterSaver\\data\\raw\\roads.geojson"
-CRITICAL_PLACES_FILE = "C:\\DisasterSaver\\data\\raw\\critical_places.geojson"
-EMERGENCY_BASES_FILE = "C:\\DisasterSaver\\data\\raw\\emergency_bases.geojson"
-PREDICTED_FLOOD_FILE = "C:\\DisasterSaver\\data\\raw\\predicted_flood.geojson"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+ROADS_FILE = BASE_DIR / "data" / "raw" / "roads.geojson"
+CRITICAL_PLACES_FILE = BASE_DIR / "data" / "raw" / "critical_places.geojson"
+EMERGENCY_BASES_FILE = BASE_DIR / "data" / "raw" / "emergency_bases.geojson"
+PREDICTED_FLOOD_FILE = BASE_DIR / "data" / "raw" / "predicted_flood.geojson"
 
 
 # ==========================================

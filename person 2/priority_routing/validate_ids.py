@@ -19,14 +19,15 @@ import geopandas as gpd
 import re
 
 
-# ==========================================
-# File paths
-# ==========================================
+from pathlib import Path
 
-ROADS_FILE = "C:\\DisasterSaver\\data\\raw\\roads.geojson"
-CRITICAL_PLACES_FILE = "C:\\DisasterSaver\\data\\raw\\critical_places.geojson"
-EMERGENCY_BASES_FILE = "C:\\DisasterSaver\\data\\raw\\emergency_bases.geojson"
-PREDICTED_FLOOD_FILE = "C:\\DisasterSaver\\data\\raw\\predicted_flood.geojson"
+BASE_DIR = Path(__file__).resolve().parent.parent
+RAW_DIR = BASE_DIR / "data" / "raw"
+
+ROADS_FILE = RAW_DIR / "roads.geojson"
+CRITICAL_PLACES_FILE = RAW_DIR / "critical_places.geojson"
+EMERGENCY_BASES_FILE = RAW_DIR / "emergency_bases.geojson"
+PREDICTED_FLOOD_FILE = RAW_DIR / "predicted_flood.geojson"
 
 
 # ==========================================
